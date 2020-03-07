@@ -1,0 +1,10 @@
+package main;
+
+public class Hn {
+	public static double wynik;
+	
+	public static void oblicz() {
+		double dz1 = Dz1.get();
+		System.out.println(dz1);
+	}
+}

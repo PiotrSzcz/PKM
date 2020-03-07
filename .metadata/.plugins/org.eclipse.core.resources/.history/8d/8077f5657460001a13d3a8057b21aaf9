@@ -1,0 +1,14 @@
+package main;
+
+public class Hn {
+	public static double wynik;
+	
+	public static void oblicz() {
+		double dz1 = Dz1.get();
+		double q = Frame.getvalue(0);
+		double d = Frame.getvalue(8);
+		double d1 = Frame.getvalue(i);
+		
+		System.out.println(dz1);
+	}
+}

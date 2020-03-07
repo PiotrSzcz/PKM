@@ -1,0 +1,15 @@
+package main;
+
+public class Hn {
+	public static double wynik;
+	
+	public static void oblicz() {
+		double n = N.get();
+		double s = Frame.getvalue(0);
+		
+		System.out.println(n + " "+ s);
+	}
+	public static double get() {
+		return wynik;
+	}
+}

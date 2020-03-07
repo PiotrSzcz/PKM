@@ -1,0 +1,23 @@
+package main;
+
+public class Lambda {
+	static double wynik;
+	
+	public static void oblicz(){
+		double lp =Frame.getvalue(0);
+		double d =Frame.getvalue(1);
+		
+		
+		wynik = (8*lp)/d;
+		
+		if(wynik*1000 > 90) {
+			
+		}
+	}
+
+	
+	
+	public static double get() {
+		return wynik;
+	}
+}

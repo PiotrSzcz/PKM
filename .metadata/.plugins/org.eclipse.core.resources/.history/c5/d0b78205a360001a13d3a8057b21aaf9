@@ -1,0 +1,11 @@
+package main;
+
+public class Lambda {
+	double wynik;
+
+	
+	
+	public static double get() {
+		return wynik;
+	}
+}

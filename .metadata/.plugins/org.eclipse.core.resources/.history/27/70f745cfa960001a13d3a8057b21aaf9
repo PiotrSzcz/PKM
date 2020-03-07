@@ -1,0 +1,31 @@
+package main;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.BorderLayout;
+
+public class tabelka {
+
+	public JFrame frame;
+
+	public tabelka(int i) {
+		initialize(i);
+	}
+	private void initialize(int a) {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 701, 807);
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		if(a == 1) {
+		ImageIcon image1 = new ImageIcon ("C:\\Users\\piosz\\Desktop\\programowanie\\java\\PKM\\PKM\\a.png");
+		JLabel lblNewLabel = new JLabel(image1);
+		frame.getContentPane().add(lblNewLabel, BorderLayout.CENTER);
+		}
+		if(a==2) {
+		ImageIcon image2 = new ImageIcon ("C:\\Users\\piosz\\Desktop\\programowanie\\java\\PKM\\PKM\\b.png");
+		JLabel lblNewLabel = new JLabel(image2);
+		frame.getContentPane().add(lblNewLabel, BorderLayout.CENTER);
+		}
+	}
+
+}

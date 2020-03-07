@@ -1,0 +1,14 @@
+package main;
+
+public class N {
+	public static double wynik;
+	public static void oblicz() {
+		double q = Frame.getvalue(0);
+		double d = Frame.getvalue(1);
+		double d1 = Frame.getvalue(2);
+		
+	}
+	public static double get() {
+		return wynik;
+	}
+}

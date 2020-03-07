@@ -1,7 +1,5 @@
 package main;
 
-import java.awt.EventQueue;
-
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -11,39 +9,24 @@ public class tabelka {
 
 	public JFrame frame;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					tabelka window = new tabelka();
-					window.frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
+	public tabelka(int i) {
+		initialize(i);
 	}
-
-	/**
-	 * Create the application.
-	 */
-	public tabelka() {
-		initialize();
-	}
-
-	/**
-	 * Initialize the contents of the frame.
-	 */
-	private void initialize() {
+	private void initialize(int a) {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 701, 807);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		ImageIcon image = new ImageIcon ("C:\\Users\\piosz\\Desktop\\programowanie\\java\\PKM\\PKM\\a.png");
-		JLabel lblNewLabel = new JLabel(image);
+		if(a == 1) {
+		ImageIcon image1 = new ImageIcon ("C:\\Users\\piosz\\Desktop\\programowanie\\java\\PKM\\PKM\\a.png");
+		JLabel lblNewLabel = new JLabel(image1);
 		frame.getContentPane().add(lblNewLabel, BorderLayout.CENTER);
+		}
+		if(a == 2) {
+		ImageIcon image2 = new ImageIcon ("C:\\Users\\piosz\\Desktop\\programowanie\\java\\PKM\\PKM\\b.png");
+		JLabel lblNewLabel = new JLabel(image2);
+		frame.getContentPane().add(lblNewLabel, BorderLayout.CENTER);
+		frame.setBounds(100, 100, 900, 607);
+		}
 	}
 
 }

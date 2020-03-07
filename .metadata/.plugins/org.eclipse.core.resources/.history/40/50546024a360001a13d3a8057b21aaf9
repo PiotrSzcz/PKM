@@ -1,0 +1,15 @@
+package main;
+
+public class Lambda {
+	static double wynik;
+	
+	public static void oblicz{
+		
+	}
+
+	
+	
+	public static double get() {
+		return wynik;
+	}
+}
