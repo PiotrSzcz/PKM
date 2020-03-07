@@ -1,0 +1,7 @@
+package main;
+
+public class Dz1 {
+	public static void oblicz() {
+		System.out.println("Twoja mama2");
+	}
+}

@@ -1,0 +1,12 @@
+package main;
+
+
+public class D3 {
+	
+	public static void oblicz() {
+		
+		double x1 = 8*3.14;
+		x1 = Frame.getvalue(1);
+		System.out.println("Twoja mama" + x1);
+	}
+}

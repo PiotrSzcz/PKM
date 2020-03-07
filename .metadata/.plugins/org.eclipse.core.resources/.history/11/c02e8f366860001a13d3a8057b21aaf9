@@ -1,0 +1,56 @@
+package main;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.BorderLayout;
+import javax.swing.SpringLayout;
+import javax.swing.JTextField;
+
+public class wynik {
+	String d3wynik = String.valueOf(D3.wynik);
+	String Hnwynik = String.valueOf(Hn.wynik);
+	String Nwynik = String.valueOf(N.wynik);
+	String Dz1wynik = String.valueOf(Dz1.wynik);
+	
+
+	JFrame frame;
+	private JTextField textField;
+
+
+
+	/**
+	 * Create the application.
+	 */
+	public wynik(String a) {
+		initialize(a);
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize(String a) {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		SpringLayout springLayout = new SpringLayout();
+		frame.getContentPane().setLayout(springLayout);
+		
+		JLabel lblNewLabel = new JLabel("Wynik: ");
+		frame.getContentPane().add(lblNewLabel);
+		
+		textField = new JTextField();
+		springLayout.putConstraint(SpringLayout.NORTH, textField, 122, SpringLayout.NORTH, frame.getContentPane());
+		springLayout.putConstraint(SpringLayout.WEST, textField, 198, SpringLayout.WEST, frame.getContentPane());
+		springLayout.putConstraint(SpringLayout.NORTH, lblNewLabel, -14, SpringLayout.SOUTH, textField);
+		springLayout.putConstraint(SpringLayout.SOUTH, lblNewLabel, 0, SpringLayout.SOUTH, textField);
+		springLayout.putConstraint(SpringLayout.EAST, lblNewLabel, -6, SpringLayout.WEST, textField);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
+		if(a.contentEquals("d3wynik") ) {
+		textField.setText(Double.toString(D3.wynik));
+		System.out.println(D3.wynik);
+		}
+	}
+}

@@ -1,0 +1,10 @@
+package main;
+
+
+public class D3 {
+	public static void main(String[] args) {
+	double x1 = 8*3.14;
+	System.out.print(x1);
+	}
+
+}

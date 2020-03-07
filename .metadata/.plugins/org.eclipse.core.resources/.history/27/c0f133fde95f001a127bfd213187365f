@@ -1,0 +1,13 @@
+package main;
+
+
+public class D3 {
+	
+	public D3(){
+		
+	}
+	
+	public void oblicz() {
+		System.out.print("Twoja mama");
+	}
+}
